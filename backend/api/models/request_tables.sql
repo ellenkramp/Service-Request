@@ -1,7 +1,7 @@
 CREATE TABLE users(
     id SERIAL PRIMARY KEY,
     username TEXT NOT NUll UNIQUE,
-    password BYTEA NOT NULL,
+    hash BYTEA NOT NULL,
     phone NUMERIC (10),
     email VARCHAR
 );
@@ -17,7 +17,7 @@ CREATE TABLE requests(
 CREATE TABLE admin(
     id SERIAL PRIMARY KEY,
     username TEXT NOT NUll UNIQUE,
-    password BYTEA NOT NULL,
+    hash BYTEA NOT NULL,
     phone NUMERIC (10),
     email VARCHAR
 );
