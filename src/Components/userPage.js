@@ -8,7 +8,7 @@ const User = () =>
     <div className="indent" >
         <h2>Hi, User</h2>
         <NewRequest />
-        <RequestForm />
+        <RequestForm className="spacing"/>
         <CompletedRequests />
         <InProgressRequests />
     </div>

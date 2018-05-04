@@ -13,7 +13,7 @@ const RequestForm =  () => {
                 <input type="text" name="title"/>
                 <br/>
                 Request Description: 
-                <input type="text" name="description"/>
+                <textarea name="description"/>
                 <br/>
                 <button> Submit </button>
             </form>
