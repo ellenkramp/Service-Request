@@ -3,23 +3,22 @@ import UserPage from './userPage'
 import Home from './Home';
 import ManagerPage from './managerPage';
 import Profile from './Profile';
-import { Route, Link } from 'react-router-dom';
+import { Route, NavLink } from 'react-router-dom';
 
-//All the routes will be handled from here
-//App will have persistent navbar
-//Login, User and Manager Pages
+
 const App = () =>
-  <div className="App">
-    <div className="App-Nav">
+  <div className="app">
+    <div className="app-Nav">
       <nav>
-        <Link to="/home">Home</Link>
-        <Link to="/user">User</Link>
-        <Link to="/profile">Profile</Link>
-        <Link to="/manager">Manager</Link>
+        <NavLink to="/home">Home</NavLink>
+        <NavLink to="/user">User</NavLink>
+        <NavLink to="/profile">Profile</NavLink>
+        <NavLink to="/manager">Manager</NavLink>
       </nav>
     </div>
     <div>
-      <Route path="/home" component={Home}/>
+      <Route exact path="/" component={Home}/>
+      <Route path="/Home" component={Home}/>
       <Route path="/user" component={UserPage}/>
       <Route path="/manager" component={ManagerPage}/>
       <Route path="/profile" component={Profile}/>

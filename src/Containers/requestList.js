@@ -1,14 +1,14 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-let log = (thing) => {
-    // console.log(thing);
-    return thing;
-}
+// let log = (thing) => {
+//     console.log(thing);
+//     return thing;
+// }
 
 const RequestList = ({ requests }) => {
     return ( <ul>
-        { log(requests).map(request => { 
+        { requests.map(request => { 
             return (<li key={request.title}> {request.title} </li>)
         })}
         </ul> 
@@ -17,7 +17,7 @@ const RequestList = ({ requests }) => {
 
 const mapStateToProps = (state)=> {
     return {
-        requests: log(state.requests),
+        requests: state.requests,
     };  
 }
 

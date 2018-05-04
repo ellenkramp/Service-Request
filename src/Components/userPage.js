@@ -12,9 +12,4 @@ const User = ()=>
         <InProgressRequests />
     </div>
 
-//User page has: 
-//New request button component
-//Completed Requests component
-//In Progress Requests component
-//Request form when New Request Button is Clicked
 export default User;

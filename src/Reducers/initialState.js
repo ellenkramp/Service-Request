@@ -54,7 +54,7 @@ const initialState =  {
             id: '193',
             userId: '',
         },
-        {title: 'Graffiti on shed wall',
+        {title: "Trash wasn't collected at last date",
             description: 'Et feugiat civibus eos. Ut definiebas dissentias cum, nam te semper copiosae postulant. Dolore omnesque vix eu, malorum inermis denique ad eam.',
             status: 'in progress',
             id: '426',
