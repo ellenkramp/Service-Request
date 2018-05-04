@@ -5,7 +5,7 @@ import InProgressRequests from './inProgressRequests';
 import RequestForm from './requestForm';
 
 const User = () => 
-    <div>
+    <div className="indent" >
         <h2>Hi, User</h2>
         <NewRequest />
         <RequestForm />

@@ -1,8 +1,27 @@
 body {
   margin: 0;
   padding: 0;
-  background: #ccc;
+  background: rgb(243, 240, 240);
   width: 100vw;
+  font-family: 'Quicksand', sans-serif;
+}
+
+img {
+  object-fit: cover;
+  width: 100vw;
+  height: 200px;
+  opacity: 50%;
+  z-index: -1;
+}
+
+button {
+  font-family: 'Archivo Narrow', sans-serif;
+  padding: 5px;
+  font-size: 1em;
+}
+
+button:hover {
+  background-color: white;
 }
 
 .app-nav {
@@ -20,10 +39,12 @@ body {
 }
 .nav-list {
   display: flex;
+  margin-left: 100px;
   justify-content: space-around;
+  width: 100vw;
 }
 nav ul li:hover {
-  background-color: #005f5f;
+  background-color: #f5fafa;
 }
 
 NavLink.active {
@@ -33,12 +54,29 @@ NavLink.active {
 }
 
 nav ul li {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 10px;
   text-decoration: none;
-  color: #fff;
   transition: .3s background-color;
   /* display: inline-block; */
-  font-family: 'Oswald', sans-serif;
-  font-size: 1.2em;
+  font-family: 'Archivo Narrow', sans-serif;
   line-height: 40px;
   border-bottom: 1px solid #888;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5em;
+}
+
+.indent {
+  margin-left: 100px;
+}
+
+.mgr-nav {
+  display: flex;
+  flex-direction: column;
 }
