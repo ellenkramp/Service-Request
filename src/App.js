@@ -1,21 +1,14 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React from 'react';
+import User from './Components/userPage'
 import './App.css';
 
-class App extends Component {
-  render() {
-    return (
+//All the routes will be handled from here
+//App will have persistent navbar
+//Login, User and Manager Pages
+const App = ()=>
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <User />
       </div>
-    );
-  }
-}
+
 
 export default App;
