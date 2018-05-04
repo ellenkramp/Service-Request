@@ -1,8 +1,20 @@
+import { combineReducers } from 'redux';
 import initialState from './initialState';
 
-//action -- 
+let requests = (state = initialState.requests, action) => {
+    let newRequest = {
+        status: 'incomplete',
+        ...action.payload
+    }
 
-//reducer
-let reducer = (state = initialState, action) => state;
+    switch (action.type) {
+        case 'NEW_REQUEST' : 
+            return [ newRequest, ...state ]
+    };
+    return state
+};
 
-export default reducer;
+
+export default combineReducers({ 
+    requests, 
+});
